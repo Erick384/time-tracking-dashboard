@@ -2,7 +2,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: 'Rubik', sans-serif;
+  font-family: "Rubik", sans-serif;
 }
 body {
   display: flex;
@@ -17,7 +17,7 @@ body {
   box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
   display: grid;
   grid-template-columns: repeat(4, 200px);
-  grid-template-rows: repeat(2 ,24vh);
+  grid-template-rows: repeat(2, 24vh);
   gap: 1.5rem;
 }
 .profile {
@@ -51,9 +51,9 @@ body {
   /* border: 1px solid red; */
 }
 .svg {
-    display: flex;
-    height: 10px;
-    justify-content: flex-end;
+  display: flex;
+  height: 1rem;
+  justify-content: flex-end;
 }
 .botp {
   display: flex;
@@ -67,35 +67,74 @@ body {
   justify-content: space-between;
   margin-bottom: 1.2rem;
 }
-
-.two{
+.one svg {
+  cursor: pointer;
+}
+.two {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.two h5 {
+  color: hsl(236, 100%, 87%);
+}
+.two h1,
+.one h3 {
+  font-weight: normal;
+  color: white;
+}
+#work {
+  background-color: hsl(15, 100%, 70%);
+}
+#play {
+  background-color: hsl(195, 74%, 62%);
+}
+#study {
+  background-color: hsl(348, 100%, 68%);
+}
+#exercise {
+  background-color: hsl(145, 58%, 55%);
+}
+#social {
+  background-color: hsl(264, 64%, 52%);
+}
+#selfCare {
+  background-color: hsl(43, 84%, 65%);
+}
+@media screen and (max-width: 600px) {
+  * {
+    box-sizing: border-box;
+  }
+  body {
     display: flex;
+    height: auto;
+    padding: 2rem;
+    align-items: normal;
     flex-direction: column;
-    gap: .5rem;
-}
-.two h5{
-    color: hsl(236, 100%, 87%);
-}
-.two h1 , .one h3{
-    font-weight: normal;
-    color: white;
-}
-#work{
-    background-color: hsl(15, 100%, 70%);
-}
-#play{
-    background-color: hsl(195, 74%, 62%);
-}
-#study{
-    background-color: hsl(348, 100%, 68%);
-}
-#exercise{
-    background-color: hsl(145, 58%, 55%);
-}
-#social{
-    background-color: hsl(264, 64%, 52%);
-}
-#selfCare{
-    background-color: hsl(43, 84%, 65%);
-
+  }
+  .container {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 1fr repeat(6, 170px);
+  }
+  .profile {
+    grid-row: 1;
+  }
+  .top,
+  .bottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .two {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .svg {
+    display: flex;
+    height: 1rem;
+    justify-content: flex-end;
+  }
 }
