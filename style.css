@@ -57,9 +57,6 @@ body {
     justify-content: flex-end;
 
 }
-.svg svg{
-    height: 1rem;
-}
 .botp {
   display: flex;
   flex-direction: column;
@@ -71,7 +68,29 @@ body {
 .one {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 1rem;
+}
+.two{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
 }
 #work{
+    background-color: hsl(15, 100%, 70%);
+}
+#play{
+    background-color: hsl(195, 74%, 62%);
+}
+#study{
+    background-color: hsl(348, 100%, 68%);
+}
+#exercise{
+    background-color: hsl(145, 58%, 55%);
+}
+#social{
+    background-color: hsl(264, 64%, 52%);
+}
+#selfCare{
     background-color: hsl(43, 84%, 65%);
+
 }
