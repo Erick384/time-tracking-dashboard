@@ -17,7 +17,7 @@ body {
   box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
   display: grid;
   grid-template-columns: repeat(4, 200px);
-  grid-template-rows: repeat(2, 24vh);
+  /* grid-template-rows: repeat(2, 24vh); */
   gap: 1.5rem;
 }
 .profile {
