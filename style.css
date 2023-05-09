@@ -1,5 +1,77 @@
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  gap: 4rem;
+  background-color: hsl(226, 43%, 10%);
+}
+.container {
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-row: 1fr 1fr;
+  gap: 1.5rem;
+}
+.profile {
+  display: flex;
+  flex-direction: column;
+  grid-row: 1 / 2;
+  grid-row: span 2;
+  background-color: hsl(235, 46%, 20%);
+  border-radius: 10px;
+}
+.top,
+.bottom {
+  padding: 2rem;
+}
+.top {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding-bottom: 4rem;
+  background-color: hsl(246, 80%, 60%);
+  border-radius: 10px;
+}
+.bottom {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.item {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  border-radius: 10px;
+  border: 1px solid red;
+}
+.svg {
+    display: flex;
+    height: 1rem;
+    justify-content: flex-end;
+
+}
+.svg svg{
+    height: 1rem;
+}
+.botp {
+  display: flex;
+  flex-direction: column;
+  background-color: hsl(235, 46%, 20%);
+  padding: 2rem;
+  border-radius: 10px;
+  
+}
+.one {
+  display: flex;
+  justify-content: space-between;
+}
+#work{
+    background-color: hsl(43, 84%, 65%);
 }
